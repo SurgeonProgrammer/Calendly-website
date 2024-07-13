@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes pop-out {
+        0% { transform: scale(0.5); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes fade-in {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    .animate-pop-out {
+        animation: pop-out 0.5s ease-out forwards;
+    }
+    .animate-fade-in {
+        animation: fade-in 0.5s ease-in forwards;
+    }
+</style>
+</head>
+<body class="mx-0 font-sans">
+  <div class="border-b shadow-sm">
+    <nav class="flex gap-[250px] mx-[160px] my-[-20px]">
+        <a href="index.html"><img class="w-[300px]"  src="icons/logo.png"></a>
+        <ul class="flex items-center justify-center gap-[100px] font-semibold text-[25px]">
+            <!-- <li><a href="index.html">Home</a></li> -->
+            <li><a href="individuals.html">Individuals</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="enterprise.html">Enterprise</a></li>
+        </ul>
+    </nav>
+  </div>
+  
+  <div class="flex flex-row items-center justify-between mx-[200px] mt-[80px]">
+    <div class="animate-fade-in">
+      <div>
+        <p class="text-[80px] font-bold pt-[30px] leading-[100px] tracking-tighter">
+          Easy <br> scheduling <br> <span class="text-[#006AFF]">ahead</span>
+        </p>
+      </div>
+      <div>
+        <p class="mt-[50px]  mb-[40px] text-[28px] leading-[60px] font-semibold tracking-tighter w-[700px]">
+          Calendly is your hub for scheduling meetings <br> professionally and efficiently, eliminating the hassle of <br> back-and-and forth emails so you can get back to work.
+        </p>
+      </div>
+      <div class="border flex justify-between py-0 pl-[25px] rounded-[50px] shadow-lg">
+        <input class="text-[20px]" type="email" name="email address" placeholder="Enter your email">
+        <button class="bg-black text-white px-[35px] py-[25px] rounded-[50px] w-[170px]">
+          Sign Up
+        </button>
+      </div>
+      <div>
+        <p class="mt-[15px] ml-[20px] text-gray-500">
+          Create your free account. No credit card required.
+        </p>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div class="relative min-w-[500px] ml-[-50px]">
+          <img class=" h-[700px]" src="images/main_lady.webp">
+          <!-- <img class="absolute bottom-[120px] right-[230px] rounded-full w-[200px]" src="images/rounded_image.webp"> -->
+        </div>
+       
+      </div>
+      
+    </div>
+  </div>
+  <div class="bg-gray-100 h-[400px] mx-[200px] mt-[110px]">
+    <div>
+      <p class="text-[30px] font-bold tracking-tighter text-center pt-[100px]">
+        Simplified scheduling for more than <br> <span class="text-[#006AFF]">10,000,000</span> users worldwide
+      </p>
+    </div>
+    <div class="flex flex-row justify-between px-[200px] items-center mt-10">
+      <img class="w-[200px] h-[100px]"  src="icons/compass_logo.png">
+      <img class="w-[80px] h-[30px]"  src="icons/dropbox_logo.png">
+      <img class="w-[80px] h-[70px]" src="icons/ebay_logo.png">
+      <img class="w-[120px] h-[60px]" src="icons/lazboy_logo.png">
+      <img class="w-[200px] h-[80px]" src="icons/twilio_logo.png">
+    </div>
+
+  </div>
+  <footer class="mx-[200px] mt-[100px] mb-[200px]">
+    <div class="grid grid-cols-3 text-center mx-[100px]">
+      <div class="col-span-1 space-y-10 border-l relative">
+        <div class="absolute left-[-20px] top-0">
+          <p class="w-[47px] h-[50px] bg-[#016BFF] text-white font-bold rounded-full text-[30px]">1.</p>
+
+        </div>
+        <p class="font-bold text-[27px] ">
+          Create <br>
+          simple rules
+        </p>
+        <p class="text-[20px] font-semibold">
+          Let calendly know your <br> availability preferences and <br> it'll do the work for you
+        </p>
+      </div>
+      <div class="col-span-1 space-y-10 border-l relative">
+        <div class="absolute left-[-20px] top-0">
+          <p class="w-[47px] h-[50px] bg-[#016BFF] text-white font-bold rounded-full text-[30px]">2.</p>
+
+        </div>
+        <p class="font-bold text-[27px]">
+          Share your link
+        </p>
+        <p class="text-[20px] font-semibold">
+          Send guests your Calendly <br>link or embed it on your <br> website
+        </p>
+      </div>
+      <div class="col-span-1 space-y-10 border-l relative">
+        <div class="absolute left-[-20px] top-0">
+          <p class="w-[47px] h-[50px] bg-[#016BFF] text-white font-bold rounded-full text-[30px]">3.</p>
+
+        </div>
+        <p class="font-bold text-[27px]">
+          Get booked
+        </p>
+        <p class="text-[20px] font-semibold">
+          They pick a time and the <br> event is added to your <br> calendar
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
